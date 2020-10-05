@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Todo - Login</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<header>
+ 		<nav class="navbar navbar-default">
+			<a href="/" class="navbar-brand">Brand</a>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="TodoServlet">Todos</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="AcountUpdateServlet"><font size="4">Hi, </font></a></li>
+				<li><a href="LogoutServlet">Logout</a></li>
+			</ul>
+		</nav>
+ 	</header>
+	
+	<div class="container">
+		<form method="post" action="TodoAddServlet">
+			<fieldset class="form-group">
+					<label>Category</label> <input name="category" type="text"
+						class="form-control" /> <BR />
+			</fieldset>
+			<fieldset class="form-group">
+				<label>Description</label> <textarea rows="6" name="todo" type="text"
+					class="form-control" /></textarea> <BR />
+			</fieldset>
+			
+			<input name="add" type="submit" class="btn btn-success" value="Submit" />
+		</form>
+	</div>
+
+</body>
+</html>
